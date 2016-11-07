@@ -9,37 +9,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var IkanItem = (function () {
-    function IkanItem() {
-    }
-    return IkanItem;
-}());
-exports.IkanItem = IkanItem;
 var listIkan = [
-    { id_ikan: 10, nama_ikan: "Ikan Koi" },
-    { id_ikan: 11, nama_ikan: "Ikan Mas" },
-    { id_ikan: 12, nama_ikan: "Ikan Mujair" },
-    { id_ikan: 13, nama_ikan: "Ikan Mas Koi" },
-    { id_ikan: 14, nama_ikan: "Ikan Hiu" }
+    { id_detail_ikan: 10, nama_detail_ikan: "Ikan Koi" },
+    { id_detail_ikan: 11, nama_detail_ikan: "Ikan Mas" },
+    { id_detail_ikan: 12, nama_detail_ikan: "Ikan Mujair" },
+    { id_detail_ikan: 13, nama_detail_ikan: "Ikan Mas Koi" },
+    { id_detail_ikan: 14, nama_detail_ikan: "Ikan Hiu" }
 ];
-var DaftarIkanComponent = (function () {
-    function DaftarIkanComponent() {
+var DaftarIkanDetailComponent = (function () {
+    function DaftarIkanDetailComponent() {
         this.judul_daftar_ikan = "Daftar Ikan";
-        this.daftar_ikans = listIkan;
+        this.daftar_ikan_details = listIkan;
     }
-    DaftarIkanComponent.prototype.onSelect = function (ikanPilih) {
+    DaftarIkanDetailComponent.prototype.onSelect = function (ikanPilih) {
         this.ikanDipilih = ikanPilih;
     };
-    DaftarIkanComponent = __decorate([
+    DaftarIkanDetailComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            templateUrl: 'daftarikan.component.html',
+            templateUrl: 'daftarikan-detail.component.html',
             styleUrls: ['daftarikan.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], DaftarIkanComponent);
-    return DaftarIkanComponent;
+    ], DaftarIkanDetailComponent);
+    return DaftarIkanDetailComponent;
 }());
-exports.DaftarIkanComponent = DaftarIkanComponent;
-//# sourceMappingURL=daftarikan.component.js.map
+exports.DaftarIkanDetailComponent = DaftarIkanDetailComponent;
+//# sourceMappingURL=daftarikandetail.component.js.map

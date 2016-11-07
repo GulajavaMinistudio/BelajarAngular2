@@ -15,6 +15,8 @@ var ikaneditor_component_1 = require("./ikaneditorcomponent/ikaneditor.component
 var ikaneditorclass_component_1 = require("./ikaneditorcomponent/ikaneditorclass.component");
 var forms_1 = require("@angular/forms");
 var daftarikan_component_1 = require("./listdetailikancomponent/daftarikan.component");
+var ikan_detail_component_1 = require("./ikandetailcomponent/ikan-detail.component");
+var daftarikandetail_component_1 = require("./ikandetailcomponent/daftarikandetail.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,8 +24,8 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
             declarations: [heroeditor_component_1.HeroEditorComponent, ikaneditor_component_1.IkanEditorComponent, ikaneditorclass_component_1.IkanEditorComponentClass,
-                daftarikan_component_1.DaftarIkanComponent],
-            bootstrap: [daftarikan_component_1.DaftarIkanComponent]
+                daftarikan_component_1.DaftarIkanComponent, daftarikandetail_component_1.DaftarIkanDetailComponent, ikan_detail_component_1.IkanDetailComponent],
+            bootstrap: [daftarikandetail_component_1.DaftarIkanDetailComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

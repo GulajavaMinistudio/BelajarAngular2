@@ -27,4 +27,10 @@ const listIkan: IkanItem[] = [
 export class DaftarIkanComponent {
     judul_daftar_ikan = "Daftar Ikan";
     daftar_ikans = listIkan;
+
+    ikanDipilih: IkanItem;
+
+    onSelect(ikanPilih: IkanItem) : void {
+        this.ikanDipilih = ikanPilih;
+    }
 }

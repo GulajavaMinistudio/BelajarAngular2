@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Ikan Pilihan</title>
+</head>
+<body>
+<div *ngIf="ikan_detail_items">
+
+    <h2>Detail {{ikan_detail_items.id_detail_ikan}}</h2>
+
+    <div>
+        <label class="label_id_ikan_class">ID Ikan : </label>
+        <input class="input_id_ikan_class" [(ngModel)]="ikan_detail_items.id_detail_ikan" placeholder="ID nomor ikan">
+    </div>
+
+    <div>
+        <label class="label_nama_ikan_class">Nama Ikan : </label>
+        <input class="input_nama_ikan_class" [(ngModel)]="ikan_detail_items.nama_detail_ikan" placeholder="nama lengkap ikan">
+    </div>
+</div>
+</body>
+</html>

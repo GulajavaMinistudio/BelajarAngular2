@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Ikan</title>
+</head>
+<body>
+<h2>
+    Daftar Ikan Dimakan
+</h2>
+<ul class="daftar_ikans_ul">
+
+    <!--tambahkan fitur on click di list-->
+    <li *ngFor="let ikan_list of daftar_ikan_details"
+        [class.selected]="ikan_list === ikanDipilih"
+        (click)="onSelect(ikan_list)">
+        <!--daftar nama ikan akan ada disini-->
+        <span class="id_ikan_badge">{{ikan_list.id_detail_ikan}}</span> <span
+            class="ikan_text"> dengan nama {{ikan_list.nama_detail_ikan}}</span>
+    </li>
+</ul>
+
+<!--parameter tag harus sama dengan detail component-->
+<detail-ikan-page [ikan_detail_items]="ikanDipilih"></detail-ikan-page>
+
+<div *ngIf="!ikanDipilih">
+    <h2>Data belum dipilih</h2>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
