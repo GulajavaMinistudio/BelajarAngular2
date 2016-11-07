@@ -9,31 +9,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var Ikan = (function () {
-    function Ikan() {
+var IkanItem = (function () {
+    function IkanItem() {
     }
-    return Ikan;
+    return IkanItem;
 }());
-exports.Ikan = Ikan;
-var IkanEditorComponent = (function () {
-    function IkanEditorComponent() {
-        this.nama_ikan = "Ikan Mas Koki";
-        this.ikan = {
-            id: 23,
-            detail: "Ikan mas koki yang berwarna emas"
-        };
-        this.sirip_ikan = "Tipe sirip ikan";
+exports.IkanItem = IkanItem;
+var listIkan = [
+    { id_ikan: 10, nama_ikan: "Ikan Koi" },
+    { id_ikan: 11, nama_ikan: "Ikan Mas" },
+    { id_ikan: 12, nama_ikan: "Ikan Mujair" },
+    { id_ikan: 13, nama_ikan: "Ikan Mas Koi" },
+    { id_ikan: 14, nama_ikan: "Ikan Hiu" }
+];
+var DaftarIkanComponent = (function () {
+    function DaftarIkanComponent() {
+        this.judul_daftar_ikan = "Daftar Ikan";
+        this.daftar_ikans = listIkan;
     }
-    IkanEditorComponent = __decorate([
+    DaftarIkanComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'my-app',
-            templateUrl: 'ikaneditorinput.component.html',
-            styleUrls: ['ikaneditor.component.css']
+            templateUrl: 'daftarikan.component.html',
+            styleUrls: ['daftarikan.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], IkanEditorComponent);
-    return IkanEditorComponent;
+    ], DaftarIkanComponent);
+    return DaftarIkanComponent;
 }());
-exports.IkanEditorComponent = IkanEditorComponent;
-//# sourceMappingURL=ikaneditor.component.js.map
+exports.DaftarIkanComponent = DaftarIkanComponent;
+//# sourceMappingURL=daftarikan.component.js.map

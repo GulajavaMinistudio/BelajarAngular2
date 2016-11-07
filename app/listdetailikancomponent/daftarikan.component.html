@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Ikan</title>
+</head>
+<body>
+    <h2>
+        Daftar Ikan Dimakan
+    </h2>
+    <ul class="daftar_ikans_ul">
+        <li *ngFor="let ikan of daftar_ikans">
+            <!--daftar nama ikan akan ada disini-->
+            <span class="id_ikan_badge">{{ikan.id_ikan}}</span> <span class="ikan_text"> dengan nama {{ikan.nama_ikan}}</span>
+        </li>
+    </ul>
+</body>
+</html>

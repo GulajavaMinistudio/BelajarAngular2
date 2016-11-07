@@ -14,14 +14,16 @@ var heroeditor_component_1 = require("./heroeditorcomponent/heroeditor.component
 var ikaneditor_component_1 = require("./ikaneditorcomponent/ikaneditor.component");
 var ikaneditorclass_component_1 = require("./ikaneditorcomponent/ikaneditorclass.component");
 var forms_1 = require("@angular/forms");
+var daftarikan_component_1 = require("./listdetailikancomponent/daftarikan.component");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [heroeditor_component_1.HeroEditorComponent, ikaneditor_component_1.IkanEditorComponent, ikaneditorclass_component_1.IkanEditorComponentClass],
-            bootstrap: [ikaneditor_component_1.IkanEditorComponent]
+            declarations: [heroeditor_component_1.HeroEditorComponent, ikaneditor_component_1.IkanEditorComponent, ikaneditorclass_component_1.IkanEditorComponentClass,
+                daftarikan_component_1.DaftarIkanComponent],
+            bootstrap: [daftarikan_component_1.DaftarIkanComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

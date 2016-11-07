@@ -21,5 +21,6 @@ export class IkanEditorComponent {
     ikan: Ikan = {
         id: 23,
         detail: "Ikan mas koki yang berwarna emas"
-    }
+    };
+    sirip_ikan = "Tipe sirip ikan"
 }
